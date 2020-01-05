@@ -9,6 +9,7 @@ import { createDrawerNavigator } from "react-navigation-drawer";
 import { createStackNavigator } from "react-navigation-stack";
 import Screen1 from "./screens/Screen1";
 import Screen2 from "./screens/Screen2";
+import Registration from "./screens/Registration/Registration";
 
 class NavigationDrawerStructure extends Component {
   //Structure for the navigatin Drawer
@@ -34,7 +35,7 @@ class NavigationDrawerStructure extends Component {
 const FirstActivity_StackNavigator = createStackNavigator({
   //All the screen from the Screen1 will be indexed here
   First: {
-    screen: Screen1,
+    screen: Registration,
     navigationOptions: ({ navigation }) => ({
       title: "Demo Screen 1",
       headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
@@ -63,11 +64,11 @@ const Screen2_StackNavigator = createStackNavigator({
 
 const DrawerNavigatorExample = createDrawerNavigator({
   //Drawer Optons and indexing
-  Screen1: {
+  Registration: {
     //Title
     screen: FirstActivity_StackNavigator,
     navigationOptions: {
-      drawerLabel: "Demo Screen 1"
+      drawerLabel: "Registration"
     }
   },
   Screen2: {
