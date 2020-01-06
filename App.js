@@ -3,11 +3,9 @@ import React, { Component } from "react";
 import { View, Image, TouchableOpacity } from "react-native";
 // import all basic components
 
-//For React Navigation 4+
 import { createAppContainer } from "react-navigation";
 import { createDrawerNavigator } from "react-navigation-drawer";
 import { createStackNavigator } from "react-navigation-stack";
-import Screen1 from "./screens/Screen1";
 import Screen2 from "./screens/Screen2";
 import Registration from "./screens/Registration/Registration";
 
