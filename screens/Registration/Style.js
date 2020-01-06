@@ -6,7 +6,6 @@ const mobileStyles = StyleSheet.create({
     flex: 1,
     minHeight: DimensionConstants.WINDOW_DIMENSIONS.HEIGHT - 56,
     alignItems: "center",
-    // justifyContent: 'center',
     paddingVertical: 40,
     backgroundColor: "rgb(248, 248, 248)"
   },
@@ -16,9 +15,9 @@ const mobileStyles = StyleSheet.create({
     justifyContent: "center"
   },
   headText: {
-    color: LightTheme.colorSignInText,
+    color: "#000",
     fontSize: 24,
-    fontWeight: 600,
+    fontWeight: "600",
     marginBottom: 34
   },
   btnsContainer1: {
@@ -32,24 +31,23 @@ const mobileStyles = StyleSheet.create({
   btnContainer: {
     marginBottom: 16
   },
-  borderBtm: {
-    borderBottomColor: "rgba(0,0,0,0.2)",
-    borderBottomWidth: 1,
-    width: "30%",
-    marginBottom: 28.5
-  },
-  signInText: {
-    color: LightTheme.CharcoalGrey,
-    fontSize: 16,
-    // marginBottom: 27,
-    textAlign: "center"
-  },
   forgotText: {
     marginBottom: 31.7
   },
   spaceBetween: {
     width: "100%",
     justifyContent: "space-between"
+  },
+  button: {
+    flex: 1,
+    width: 100,
+    alignItems: "center",
+    padding: 10,
+    backgroundColor: "#FF9800",
+    borderRadius: 7
+  },
+  buttonText: {
+    color: "#fff"
   }
 });
 

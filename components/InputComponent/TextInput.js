@@ -4,7 +4,7 @@ import { TextInput, View, Text, Animated } from "react-native";
 // Styles
 import Styles from "./Styles";
 
-const AnimatedTextInput = Animated.createAnimatedComponent(TextInput);
+let AnimatedTextInput = Animated.createAnimatedComponent(TextInput);
 
 const AnimatedInput = ({
   style,

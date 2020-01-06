@@ -37,7 +37,7 @@ const FirstActivity_StackNavigator = createStackNavigator({
   First: {
     screen: Registration,
     navigationOptions: ({ navigation }) => ({
-      title: "Demo Screen 1",
+      title: "Registration",
       headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
       headerStyle: {
         backgroundColor: "#FF9800"
@@ -52,7 +52,7 @@ const Screen2_StackNavigator = createStackNavigator({
   Second: {
     screen: Screen2,
     navigationOptions: ({ navigation }) => ({
-      title: "Demo Screen 2",
+      title: "RSVP List",
       headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
       headerStyle: {
         backgroundColor: "#FF9800"
@@ -75,7 +75,7 @@ const DrawerNavigatorExample = createDrawerNavigator({
     //Title
     screen: Screen2_StackNavigator,
     navigationOptions: {
-      drawerLabel: "Demo Screen 2"
+      drawerLabel: "RSVP List"
     }
   }
 });
